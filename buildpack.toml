@@ -52,6 +52,7 @@ version = "0.0.29"
 
 [[order.group]]
 id = "org.cloudfoundry.go-mod"
+version = "0.0.29"
 
 [[order]]
 
