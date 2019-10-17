@@ -10,12 +10,12 @@ include_files = ["buildpack.toml"]
 
 [[metadata.dependencies]]
 id = "org.cloudfoundry.dep"
-sha256 = "2e96ead384d21e791f8292a1995e93750ebef8215e76fab3cae89175f9ae6bad"
-source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.46.tar.gz"
-source_sha256 = "4d1beb13a1b019367659ff04ea9ecfc3c3af69046009d63bcd7a2698c3557635"
+sha256 = "1835cda115ce14a658ce5770f0030488815d7f73ee88c58cb0aa5e239f3bb5ee"
+source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.47.tar.gz"
+source_sha256 = "a31198e8702f13ec0499f9196f2c2705a82478ade66cc7e1ac1b0086b0d1f805"
 stacks = ["org.cloudfoundry.stacks.tiny","io.buildpacks.stacks.bionic","org.cloudfoundry.stacks.cflinuxfs3"]
-uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.46-any-stack-2e96ead3.tgz"
-version = "0.0.46"
+uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.47-any-stack-1835cda1.tgz"
+version = "0.0.47"
 
 [[metadata.dependencies]]
 id = "org.cloudfoundry.go-compiler"
@@ -53,4 +53,4 @@ version = "0.0.42"
 
 [[order.group]]
 id = "org.cloudfoundry.dep"
-version = "0.0.46"
+version = "0.0.47"
