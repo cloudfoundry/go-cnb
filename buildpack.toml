@@ -1,110 +1,110 @@
-API = "0.2"
+api = "0.2"
 
 [buildpack]
-  ID = "org.cloudfoundry.go"
-  Name = "Go Buildpack"
-  Version = "{{.Version}}"
+  id = "org.cloudfoundry.go"
+  name = "Go Buildpack"
+  version = "{{.Version}}"
 
-[Metadata]
+[metadata]
   include_files = ["buildpack.toml"]
 
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.dep"
-    SHA256 = "dfc7399afc4d3998123980e225975c404b9ef862874c0364fbbd66fc11091891"
-    Source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.56.tar.gz"
+  [[metadata.dependencies]]
+    id = "org.cloudfoundry.dep"
+    sha256 = "dfc7399afc4d3998123980e225975c404b9ef862874c0364fbbd66fc11091891"
+    source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.56.tar.gz"
     source_sha256 = "1f5ae0dc9b87b4b852d176163510373162e0f2f9f148048182745d55d199f09f"
-    Stacks = ["org.cloudfoundry.stacks.tiny"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.56-any-stack-dfc7399a.tgz"
-    Version = "0.0.56"
+    stacks = ["org.cloudfoundry.stacks.tiny"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.56-any-stack-dfc7399a.tgz"
+    version = "0.0.56"
 
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.dep"
-    SHA256 = "38cae82731261290fecd4fe28f034398a0010d64f3e3f1e5810e7b9f1be9bf71"
-    Source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.57.tar.gz"
+  [[metadata.dependencies]]
+    id = "org.cloudfoundry.dep"
+    sha256 = "38cae82731261290fecd4fe28f034398a0010d64f3e3f1e5810e7b9f1be9bf71"
+    source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.57.tar.gz"
     source_sha256 = "691c0842c9fd6779dd54bc327a1a68d9b116717a2bb876cd97b6a205f18785f2"
-    Stacks = ["io.buildpacks.stacks.bionic"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.57-any-stack-38cae827.tgz"
-    Version = "0.0.57"
+    stacks = ["io.buildpacks.stacks.bionic"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.57-any-stack-38cae827.tgz"
+    version = "0.0.57"
 
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.dep"
-    SHA256 = "38cae82731261290fecd4fe28f034398a0010d64f3e3f1e5810e7b9f1be9bf71"
-    Source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.57.tar.gz"
+  [[metadata.dependencies]]
+    id = "org.cloudfoundry.dep"
+    sha256 = "38cae82731261290fecd4fe28f034398a0010d64f3e3f1e5810e7b9f1be9bf71"
+    source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.57.tar.gz"
     source_sha256 = "691c0842c9fd6779dd54bc327a1a68d9b116717a2bb876cd97b6a205f18785f2"
-    Stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.57-any-stack-38cae827.tgz"
-    Version = "0.0.57"
+    stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.57-any-stack-38cae827.tgz"
+    version = "0.0.57"
 
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.go-compiler"
-    SHA256 = "4ec960293d197ed7bc8208fb25468995a2092ae0570f36b8c5f7b586c85e7a35"
-    Source = "https://github.com/cloudfoundry/go-compiler-cnb/archive/v0.0.53.tar.gz"
+  [[metadata.dependencies]]
+    id = "org.cloudfoundry.go-compiler"
+    sha256 = "4ec960293d197ed7bc8208fb25468995a2092ae0570f36b8c5f7b586c85e7a35"
+    source = "https://github.com/cloudfoundry/go-compiler-cnb/archive/v0.0.53.tar.gz"
     source_sha256 = "a758827b24c2d370ee1bdfb9e6c70a0b764969d95ca2a112805bec758f9125d0"
-    Stacks = ["io.buildpacks.stacks.bionic"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-compiler/org.cloudfoundry.go-compiler-0.0.53-any-stack-4ec96029.tgz"
-    Version = "0.0.53"
+    stacks = ["io.buildpacks.stacks.bionic"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-compiler/org.cloudfoundry.go-compiler-0.0.53-any-stack-4ec96029.tgz"
+    version = "0.0.53"
 
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.go-compiler"
-    SHA256 = "4ec960293d197ed7bc8208fb25468995a2092ae0570f36b8c5f7b586c85e7a35"
-    Source = "https://github.com/cloudfoundry/go-compiler-cnb/archive/v0.0.53.tar.gz"
+  [[metadata.dependencies]]
+    id = "org.cloudfoundry.go-compiler"
+    sha256 = "4ec960293d197ed7bc8208fb25468995a2092ae0570f36b8c5f7b586c85e7a35"
+    source = "https://github.com/cloudfoundry/go-compiler-cnb/archive/v0.0.53.tar.gz"
     source_sha256 = "a758827b24c2d370ee1bdfb9e6c70a0b764969d95ca2a112805bec758f9125d0"
-    Stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-compiler/org.cloudfoundry.go-compiler-0.0.53-any-stack-4ec96029.tgz"
-    Version = "0.0.53"
+    stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-compiler/org.cloudfoundry.go-compiler-0.0.53-any-stack-4ec96029.tgz"
+    version = "0.0.53"
 
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.go-compiler"
-    SHA256 = "4ec960293d197ed7bc8208fb25468995a2092ae0570f36b8c5f7b586c85e7a35"
-    Source = "https://github.com/cloudfoundry/go-compiler-cnb/archive/v0.0.53.tar.gz"
+  [[metadata.dependencies]]
+    id = "org.cloudfoundry.go-compiler"
+    sha256 = "4ec960293d197ed7bc8208fb25468995a2092ae0570f36b8c5f7b586c85e7a35"
+    source = "https://github.com/cloudfoundry/go-compiler-cnb/archive/v0.0.53.tar.gz"
     source_sha256 = "a758827b24c2d370ee1bdfb9e6c70a0b764969d95ca2a112805bec758f9125d0"
-    Stacks = ["org.cloudfoundry.stacks.tiny"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-compiler/org.cloudfoundry.go-compiler-0.0.53-any-stack-4ec96029.tgz"
-    Version = "0.0.53"
+    stacks = ["org.cloudfoundry.stacks.tiny"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-compiler/org.cloudfoundry.go-compiler-0.0.53-any-stack-4ec96029.tgz"
+    version = "0.0.53"
 
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.go-mod"
-    SHA256 = "7df8a8d4571ec2130a369dda5a5cd0e1c71f7c0c0e611d90178fa690eb71575e"
-    Source = "https://github.com/cloudfoundry/go-mod-cnb/archive/v0.0.49.tar.gz"
+  [[metadata.dependencies]]
+    id = "org.cloudfoundry.go-mod"
+    sha256 = "7df8a8d4571ec2130a369dda5a5cd0e1c71f7c0c0e611d90178fa690eb71575e"
+    source = "https://github.com/cloudfoundry/go-mod-cnb/archive/v0.0.49.tar.gz"
     source_sha256 = "91341c273b6256fdccabd3016eecd66798cdcd8563d8e5463e94740ea05c81e0"
-    Stacks = ["org.cloudfoundry.stacks.tiny"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.49-any-stack-7df8a8d4.tgz"
-    Version = "0.0.49"
+    stacks = ["org.cloudfoundry.stacks.tiny"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.49-any-stack-7df8a8d4.tgz"
+    version = "0.0.49"
 
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.go-mod"
-    SHA256 = "61096c650618864b2d8cc7a41948eda6fbf766c4a00d81a0624eff891b99517f"
-    Source = "https://github.com/cloudfoundry/go-mod-cnb/archive/v0.0.50.tar.gz"
-    source_sha256 = "e0e9c6eaf2b7bb3f3fa7575bb503544ef39a8de48a84ea2aaae18b2f91ec41d3"
-    Stacks = ["io.buildpacks.stacks.bionic"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.50-any-stack-61096c65.tgz"
-    Version = "0.0.50"
+  [[metadata.dependencies]]
+    id = "org.cloudfoundry.go-mod"
+    sha256 = "39c308bfd4bbc0cdf2b634bbd3557c86f6e8b8fb05382c358e83004293c7d059"
+    source = "https://github.com/cloudfoundry/go-mod-cnb/archive/v0.0.51.tar.gz"
+    source_sha256 = "9d90c5bd2b3681b5b9ed38ecc0c1e6224c606d37ca9bdf0b1331ce8b7de0abdf"
+    stacks = ["io.buildpacks.stacks.bionic"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.51-any-stack-39c308bf.tgz"
+    version = "0.0.51"
 
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.go-mod"
-    SHA256 = "61096c650618864b2d8cc7a41948eda6fbf766c4a00d81a0624eff891b99517f"
-    Source = "https://github.com/cloudfoundry/go-mod-cnb/archive/v0.0.50.tar.gz"
-    source_sha256 = "e0e9c6eaf2b7bb3f3fa7575bb503544ef39a8de48a84ea2aaae18b2f91ec41d3"
-    Stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.50-any-stack-61096c65.tgz"
-    Version = "0.0.50"
-
-[[order]]
-
-  [[order.Group]]
-    ID = "org.cloudfoundry.go-compiler"
-    Version = "0.0.53"
-
-  [[order.Group]]
-    ID = "org.cloudfoundry.go-mod"
-    Version = "0.0.50"
+  [[metadata.dependencies]]
+    id = "org.cloudfoundry.go-mod"
+    sha256 = "39c308bfd4bbc0cdf2b634bbd3557c86f6e8b8fb05382c358e83004293c7d059"
+    source = "https://github.com/cloudfoundry/go-mod-cnb/archive/v0.0.51.tar.gz"
+    source_sha256 = "9d90c5bd2b3681b5b9ed38ecc0c1e6224c606d37ca9bdf0b1331ce8b7de0abdf"
+    stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.51-any-stack-39c308bf.tgz"
+    version = "0.0.51"
 
 [[order]]
 
-  [[order.Group]]
-    ID = "org.cloudfoundry.go-compiler"
-    Version = "0.0.53"
+  [[order.group]]
+    id = "org.cloudfoundry.go-compiler"
+    version = "0.0.53"
 
-  [[order.Group]]
-    ID = "org.cloudfoundry.dep"
-    Version = "0.0.57"
+  [[order.group]]
+    id = "org.cloudfoundry.go-mod"
+    version = "0.0.51"
+
+[[order]]
+
+  [[order.group]]
+    id = "org.cloudfoundry.go-compiler"
+    version = "0.0.53"
+
+  [[order.group]]
+    id = "org.cloudfoundry.dep"
+    version = "0.0.57"
