@@ -19,21 +19,21 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.dep"
-    sha256 = "44fae20ae5e4186825ac6d53501c505d370ac284526412bf9e1e59ac70483589"
-    source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.58.tar.gz"
-    source_sha256 = "669b3fe2235e51dc0b9c05a583b75e58f9ed362b955d6ee4a12ed41b87eff47b"
+    sha256 = "d422f8cad38c676b2310f19ce8b5619c530f70db85eb01e47688174677a8da8b"
+    source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.59.tar.gz"
+    source_sha256 = "dfef26a7b5583e6653591f52a62134359e40595b6b24bf375e7f2a6834405260"
     stacks = ["io.buildpacks.stacks.bionic"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.58-any-stack-44fae20a.tgz"
-    version = "0.0.58"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.59-any-stack-d422f8ca.tgz"
+    version = "0.0.59"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.dep"
-    sha256 = "44fae20ae5e4186825ac6d53501c505d370ac284526412bf9e1e59ac70483589"
-    source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.58.tar.gz"
-    source_sha256 = "669b3fe2235e51dc0b9c05a583b75e58f9ed362b955d6ee4a12ed41b87eff47b"
+    sha256 = "d422f8cad38c676b2310f19ce8b5619c530f70db85eb01e47688174677a8da8b"
+    source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.59.tar.gz"
+    source_sha256 = "dfef26a7b5583e6653591f52a62134359e40595b6b24bf375e7f2a6834405260"
     stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.58-any-stack-44fae20a.tgz"
-    version = "0.0.58"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.59-any-stack-d422f8ca.tgz"
+    version = "0.0.59"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.go-compiler"
@@ -107,4 +107,4 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.dep"
-    version = "0.0.58"
+    version = "0.0.59"
