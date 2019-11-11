@@ -73,21 +73,21 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.go-mod"
-    sha256 = "ad695cfb2e9d6d03b66ab54a435ec749f50b16e36bf180dbd1f04ccb1dc894dd"
-    source = "https://github.com/cloudfoundry/go-mod-cnb/archive/v0.0.56.tar.gz"
-    source_sha256 = "12482867863c5e968ef61c53ee28893637d5bf503707ac3f9ce4de059eeb3492"
+    sha256 = "863d2d1dd487936c1438fd396792df71ed6e780bc8de213433855dbc91d36432"
+    source = "https://github.com/cloudfoundry/go-mod-cnb/archive/v0.0.57.tar.gz"
+    source_sha256 = "3c91f6ad2843279f25aaedaab41268cb467920e62b00a065ec49e4f59681c05c"
     stacks = ["io.buildpacks.stacks.bionic"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.56-any-stack-ad695cfb.tgz"
-    version = "0.0.56"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.57-any-stack-863d2d1d.tgz"
+    version = "0.0.57"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.go-mod"
-    sha256 = "ad695cfb2e9d6d03b66ab54a435ec749f50b16e36bf180dbd1f04ccb1dc894dd"
-    source = "https://github.com/cloudfoundry/go-mod-cnb/archive/v0.0.56.tar.gz"
-    source_sha256 = "12482867863c5e968ef61c53ee28893637d5bf503707ac3f9ce4de059eeb3492"
+    sha256 = "863d2d1dd487936c1438fd396792df71ed6e780bc8de213433855dbc91d36432"
+    source = "https://github.com/cloudfoundry/go-mod-cnb/archive/v0.0.57.tar.gz"
+    source_sha256 = "3c91f6ad2843279f25aaedaab41268cb467920e62b00a065ec49e4f59681c05c"
     stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.56-any-stack-ad695cfb.tgz"
-    version = "0.0.56"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.57-any-stack-863d2d1d.tgz"
+    version = "0.0.57"
 
 [[order]]
 
@@ -97,7 +97,7 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.go-mod"
-    version = "0.0.56"
+    version = "0.0.57"
 
 [[order]]
 
