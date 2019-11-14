@@ -10,19 +10,10 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.dep"
-    sha256 = "6fd1f6e88198fdbe6f1111a47732c65017ea0857b6ab8f7583c8a7c4533b78cc"
-    source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.63.tar.gz"
-    source_sha256 = "c35721ec9ab026b4616fec66d5992fed72f331c343d1ee1900dbd1e3fa4411fa"
-    stacks = ["org.cloudfoundry.stacks.tiny"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.63-any-stack-6fd1f6e8.tgz"
-    version = "0.0.63"
-
-  [[metadata.dependencies]]
-    id = "org.cloudfoundry.dep"
     sha256 = "a05db0c221b7366ac536b3c059b232fa68d42bb62984d5a80817180a07d507e7"
     source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.64.tar.gz"
     source_sha256 = "c8a7319330549a79634b983d524ea56a2771d83bfb26d8db26bf1c71fa48f335"
-    stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3"]
+    stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3", "org.cloudfoundry.stacks.tiny"]
     uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.64-any-stack-a05db0c2.tgz"
     version = "0.0.64"
 
@@ -42,6 +33,28 @@ api = "0.2"
     source_sha256 = "3c91f6ad2843279f25aaedaab41268cb467920e62b00a065ec49e4f59681c05c"
     stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3", "org.cloudfoundry.stacks.tiny"]
     uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.57-any-stack-863d2d1d.tgz"
+    version = "0.0.57"
+
+[[order]]
+
+  [[order.group]]
+    id = "org.cloudfoundry.go-compiler"
+    version = "0.0.54"
+
+  [[order.group]]
+    id = "org.cloudfoundry.go-mod"
+    version = "0.0.57"
+
+[[order]]
+
+  [[order.group]]
+    id = "org.cloudfoundry.go-compiler"
+    version = "0.0.54"
+
+  [[order.group]]
+    id = "org.cloudfoundry.dep"
+    version = "0.0.64"
+dpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.57-any-stack-863d2d1d.tgz"
     version = "0.0.57"
 
 [[order]]
