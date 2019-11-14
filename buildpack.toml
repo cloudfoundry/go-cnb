@@ -54,25 +54,3 @@ api = "0.2"
   [[order.group]]
     id = "org.cloudfoundry.dep"
     version = "0.0.64"
-dpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.57-any-stack-863d2d1d.tgz"
-    version = "0.0.57"
-
-[[order]]
-
-  [[order.group]]
-    id = "org.cloudfoundry.go-compiler"
-    version = "0.0.54"
-
-  [[order.group]]
-    id = "org.cloudfoundry.go-mod"
-    version = "0.0.57"
-
-[[order]]
-
-  [[order.group]]
-    id = "org.cloudfoundry.go-compiler"
-    version = "0.0.54"
-
-  [[order.group]]
-    id = "org.cloudfoundry.dep"
-    version = "0.0.64"
