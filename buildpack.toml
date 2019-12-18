@@ -28,12 +28,12 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.go-mod"
-    sha256 = "f33958a673e1926e68969071aead730038f22fe13add13ade67317400007f0ec"
-    source = "https://github.com/cloudfoundry/go-mod-cnb/archive/v0.0.67.tar.gz"
-    source_sha256 = "e4b032a21d00477bdfffed68ec73abe3927e30f4aa187259db6d90d47e44140f"
+    sha256 = "0b3f0f3416fdb9da3ba738dbcfd9945b9a47c4490329d14ad9047872eac4eacb"
+    source = "https://github.com/cloudfoundry/go-mod-cnb/archive/v0.0.68.tar.gz"
+    source_sha256 = "a42ca84068d5ca7fe7e2aa3d7c059a8b24fa60307657bf0c2d27776691e7a3aa"
     stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3", "org.cloudfoundry.stacks.tiny"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.67-any-stack-f33958a6.tgz"
-    version = "0.0.67"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-mod/org.cloudfoundry.go-mod-0.0.68-any-stack-0b3f0f34.tgz"
+    version = "0.0.68"
 
 [[order]]
 
@@ -43,7 +43,7 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.go-mod"
-    version = "0.0.67"
+    version = "0.0.68"
 
 [[order]]
 
