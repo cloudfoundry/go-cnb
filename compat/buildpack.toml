@@ -10,12 +10,12 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "lifecycle"
-    version = "0.5.0"
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/lifecycle/lifecycle-0.5.0-any-stack-fe375030.tgz"
     sha256 = "fe37503098e964aa1a052abb50fecf2de3624c0049506e638c86dc5b4b7909e8"
     source = "https://github.com/buildpack/lifecycle/archive/v0.5.0.tar.gz"
     source_sha256 = "96c50622096b252b596a33731785ae959992078eada660ae068d86607faee6a6"
-    stacks = ["org.cloudfoundry.stacks.cflinuxfs3","org.cloudfoundry.stacks.cflinuxfs2"]
+    stacks = ["org.cloudfoundry.stacks.cflinuxfs2", "org.cloudfoundry.stacks.cflinuxfs3"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/lifecycle/lifecycle-0.5.0-any-stack-fe375030.tgz"
+    version = "0.5.0"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.dep"
@@ -28,12 +28,12 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.go-compiler"
-    sha256 = "89eee1a24ba51e9e44c1418f820a3dde1e065e0a3dfb20a3659d7e21cd2521fa"
-    source = "https://github.com/cloudfoundry/go-compiler-cnb/archive/v0.0.55.tar.gz"
-    source_sha256 = "13cd26becb885a7738aeebb784a9403c4aab027fde7cac4ac4109a956554ea5c"
+    sha256 = "2a0d95a1ae34d632abf1f1314589a44d3b11b2e2210087317431d8a4df22cad7"
+    source = "https://github.com/cloudfoundry/go-compiler-cnb/archive/v0.0.82.tar.gz"
+    source_sha256 = "371129071f5595402bde2e7e9ce56d5ef2b54fee3e39fc136c0d796f3e80afb9"
     stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3", "org.cloudfoundry.stacks.tiny"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-compiler/org.cloudfoundry.go-compiler-0.0.55-any-stack-89eee1a2.tgz"
-    version = "0.0.55"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.go-compiler/org.cloudfoundry.go-compiler-0.0.82-any-stack-2a0d95a1.tgz"
+    version = "0.0.82"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.go-mod"
@@ -48,7 +48,7 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.go-compiler"
-    version = "0.0.55"
+    version = "0.0.82"
 
   [[order.group]]
     id = "org.cloudfoundry.go-mod"
@@ -58,7 +58,7 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.go-compiler"
-    version = "0.0.55"
+    version = "0.0.82"
 
   [[order.group]]
     id = "org.cloudfoundry.dep"
