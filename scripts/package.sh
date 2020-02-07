@@ -2,7 +2,11 @@
 set -eo pipefail
 
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
-./scripts/install_tools.sh
+
+# shellcheck source=.util/tools.sh
+source "${PWD}/scripts/.util/tools.sh"
+
+util::tools::packager::install --directory "${PWD}/.bin"
 
 PACKAGE_DIR=${PACKAGE_DIR:-"${PWD##*/}_$(openssl rand -hex 4)"}
 
@@ -11,23 +15,24 @@ args=".bin/packager -uncached"
 
 while getopts "acv:" arg
 do
-    case $arg in
+    case "${arg}" in
     a) archive=true;;
     c) cached=true;;
     v) version="${OPTARG}";;
+    *) echo "unknown argument ${arg}"; exit 1;;
     esac
 done
 
-if [[ ! -z "$cached" ]]; then #package as cached
+if [[ -n "${cached:-}" ]]; then #package as cached
     full_path="$full_path-cached"
     args=".bin/packager"
 fi
 
-if [[ ! -z "$archive" ]]; then #package as archive
+if [[ -n "${archive:-}" ]]; then #package as archive
     args="${args} -archive"
 fi
 
-if [[ -z "$version" ]]; then #version not provided, use latest git tag
+if [[ -z "${version:-}" ]]; then #version not provided, use latest git tag
     git_tag=$(git describe --abbrev=0 --tags)
     version=${git_tag:1}
 fi
@@ -36,7 +41,7 @@ args="${args} -version ${version}"
 
 eval "${args}" "${full_path}"
 
-if [[ -n "$BP_REWRITE_HOST" ]]; then
+if [[ -n "${BP_REWRITE_HOST:-}" ]]; then
     sed -i '' -e "s|^uri = \"https:\/\/buildpacks\.cloudfoundry\.org\(.*\)\"$|uri = \"http://$BP_REWRITE_HOST\1\"|g" "$full_path/buildpack.toml"
 fi
 
