@@ -19,12 +19,12 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.dep"
-    sha256 = "a61c7dd8d13be140806c8b8ae520354650cb323aa7970ff33407cd7e70e791d5"
-    source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.96.tar.gz"
-    source_sha256 = "cb3607b6772b425366526e8e0230aba5c943db4f74dd438da719826c63fc6821"
+    sha256 = "adc7f7482b4faa675a7c6cc3ecc0abf70d698b0d4822b2394c7566b10732d9c5"
+    source = "https://github.com/cloudfoundry/dep-cnb/archive/v0.0.97.tar.gz"
+    source_sha256 = "547dbfda805cba58635d68b10d61fd3c1269453b61e2607088d9b21abb13ac50"
     stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3", "org.cloudfoundry.stacks.tiny"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.96-any-stack-a61c7dd8.tgz"
-    version = "0.0.96"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.dep/org.cloudfoundry.dep-0.0.97-any-stack-adc7f748.tgz"
+    version = "0.0.97"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.go-compiler"
@@ -62,4 +62,4 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.dep"
-    version = "0.0.96"
+    version = "0.0.97"
